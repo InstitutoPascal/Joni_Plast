@@ -4,20 +4,27 @@
             <link rel="stylesheet" href="{{=URL('static','css/web2py-bootstrap4.css')}}"/>
             <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
             <link rel="apple-touch-icon" href="{{=URL('static','images/favicon.png')}}">
-    </head>
+            <style>
+               body::after {
+                 content: "";
+                   background: url("{{=URL('static','/fondos/eve.jpeg')}}");
+                 background-repeat:no-repeat;
+                 background-size: cover;
+                 background-attachment:fixed;
+                 opacity: 2;
+                 top: 0;
+                 left: 0;
+                 bottom: 0;
+                 right: 0;
+                 position: absolute;
+                 z-index: -2;
+               }
+            </style>
+        </head>
+        <body>
+                <div>
+                    <button type= "button" class= "btn btn-secondary btn-lg" > PRODUCTOS </button> 
+                </div>
 
-<body background='/Joni_Plast/static/fondos/logo9.jpeg' style="background: url(/Joni_Plast/static/fondos/fondo4.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-    
-     <div>
-         <h1 class= "display-1" </h1>
-         <p class= "text-center text-success">Joni Plast</p>
-        </div>
-
-<div>
-   <button type= "button" class= "btn btn-success"> PRODUCTOS </button>
-</div>
-<div>
-  <button type= "button" class= "btn btn-warning" > CLIENTES </button>
-</div>
-    </body>
-</html>
+        </body>
+    </html>
